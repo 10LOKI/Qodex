@@ -253,3 +253,6 @@ SELECT * FROM (
 ORDER BY idResultat ASC;
 
 -- Requête 23 : Afficher le nom de chaque quiz avec sa catégorie
+SELECT Q.titreQuiz,C.nomCategorie 
+FROM Quiz AS Q
+INNER JOIN Categories AS C ON Q.idCategorie = C.idCategorie;
